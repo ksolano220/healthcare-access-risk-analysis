@@ -1,5 +1,9 @@
 ## Healthcare Access Risk Analysis
 
+### Live Map
+
+[ksolano220.github.io/healthcare-access-risk-analysis](https://ksolano220.github.io/healthcare-access-risk-analysis/) — 3,200+ US counties colored by access risk, with hover tooltips.
+
 ### Problem
 Healthcare access is uneven across US counties. This project identifies where additional resources should be allocated to improve access most effectively.
 
