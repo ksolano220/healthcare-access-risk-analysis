@@ -4,7 +4,7 @@
 Healthcare access is uneven across US counties. This project identifies where additional resources should be allocated to improve access most effectively.
 
 ### Approach
-- Generated a synthetic dataset covering **3,200+ US counties** with population, uninsured rates, and hospital counts
+- Generated a **synthetic county-level dataset** (3,200+ counties) with population, uninsured rates, and hospital counts. Synthetic data is used so the scoring methodology can be inspected end-to-end without the licensing and privacy constraints of real ACS/HRSA data. The modeling pipeline is designed to drop in real inputs without changes.
 - Standardized metrics using z-scores to compare counties on equal footing
 - Built a **composite risk score** (high uninsured rate + low hospital density = high risk)
 - Ranked counties by priority using a weighted model that factors in population demand
@@ -39,9 +39,9 @@ open outputs/map.html
 ```
 
 ### Key Findings
-- ~15% of counties fall into the **Critical** risk tier — concentrated in TX, FL, GA, MS, and rural areas
-- Small rural counties show disproportionately low hospital access relative to their uninsured populations
-- Resource allocation decisions significantly impact access outcomes depending on distribution strategy
+- **~15% of counties fall into the Critical risk tier**, concentrated in TX, FL, GA, MS, and rural areas. These are the counties where an incremental dollar of federal or philanthropic spending likely buys the most access.
+- **Small rural counties show disproportionately low hospital access** relative to their uninsured populations. Coverage expansion alone will not close access gaps without facility-level investment in the highest-risk tier.
+- **Population-weighted prioritization shifts the target list meaningfully.** Raw risk scores over-index on low-population rural counties, while a weighted model surfaces mid-size counties where the same intervention reaches more uninsured people per dollar.
 
 ### Outputs
 | File | Description |
