@@ -2,7 +2,7 @@
 
 ### Live Map
 
-[ksolano220.github.io/healthcare-access-risk-analysis](https://ksolano220.github.io/healthcare-access-risk-analysis/) — 3,200+ US counties colored by access risk, with hover tooltips.
+[ksolano220.github.io/healthcare-access-risk-analysis](https://ksolano220.github.io/healthcare-access-risk-analysis/). 3,200+ US counties colored by access risk, with hover tooltips.
 
 ### Problem
 Healthcare access is uneven across US counties. This project identifies where additional resources should be allocated to improve access most effectively.
@@ -15,7 +15,7 @@ Healthcare access is uneven across US counties. This project identifies where ad
 - Classified counties into risk tiers: Low, Moderate, High, Critical
 
 ### Interactive Map
-The main output is an **interactive choropleth map** — counties colored by access risk score with hover tooltips showing:
+The main output is an **interactive choropleth map**. Counties are colored by access risk score with hover tooltips showing:
 - Risk tier
 - Uninsured rate
 - Hospitals per 100k population
